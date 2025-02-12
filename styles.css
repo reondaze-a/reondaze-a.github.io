@@ -56,3 +56,13 @@ nav ul li a:hover {
   font-weight: 300;
   margin-top: 10px;
 }
+
+.coffeeshop {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease-in-out
+}
+
+.coffeeshop:hover {
+    color: #64ffda;
+}
