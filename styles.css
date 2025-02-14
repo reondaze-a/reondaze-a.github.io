@@ -46,23 +46,23 @@ nav ul li a:hover {
   color: #64ffda;
 }
 
-.hero h1 {
+.projects h1 {
   font-size: 36px;
   font-weight: 700;
 }
 
-.hero p {
+.projects p {
   font-size: 18px;
   font-weight: 300;
   margin-top: 10px;
 }
 
-.coffeeshop {
+.projects_link {
     text-decoration: none;
     color: #fff;
     transition: color 0.3s ease-in-out
 }
 
-.coffeeshop:hover {
+.projects_link:hover {
     color: #64ffda;
 }
