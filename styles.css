@@ -46,6 +46,12 @@ nav ul li a:hover {
   color: #64ffda;
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .projects h1 {
   font-size: 36px;
   font-weight: 700;
@@ -57,12 +63,12 @@ nav ul li a:hover {
   margin-top: 10px;
 }
 
-.projects_link {
+.projects__link {
     text-decoration: none;
     color: #fff;
     transition: color 0.3s ease-in-out
 }
 
-.projects_link:hover {
+.projects__link:hover {
     color: #64ffda;
 }
