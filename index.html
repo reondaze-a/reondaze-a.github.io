@@ -7,33 +7,45 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
+    <div class="page">
+
+      <!--Header-->
+      <header class="header">
         <div class="logo">My Portfolio</div>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="projects">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Showcasing my work and experience</p>
-        <a 
-            class="projects__link" 
-            href="https://reondaze-a.github.io/se_project_coffeeshop"
-            target="_blank"
-        >
-          Triple Peaks Cafe
-        </a>
-        <a 
-            class="projects__link" 
-            href="https://reondaze-a.github.io/se_project_spots"
-            target="_blank"
-        >
-          Spots Gallery
-        </a>
-      </div>
-    </header>
+        <nav class="nav">
+          <ul class="nav__links">
+            <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+            <li class="nav__item"><a class="nav__link" href="#projects">Projects</a></li>
+            <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        
+      </header>
+      <!--Header end-->
+
+      <main class="projects">
+        <h1 class="projects__title">Welcome to My Portfolio</h1>
+        <p class="projects__subtitle">Below are the projects that I've worked with as well as currently working on:</p>
+        
+        <section class="projects__grid">
+          <a 
+              class="projects__link" 
+              href="https://reondaze-a.github.io/se_project_coffeeshop"
+              target="_blank"
+          >
+            Triple Peaks Cafe
+          </a>
+          <a 
+              class="projects__link" 
+              href="https://reondaze-a.github.io/se_project_spots"
+              target="_blank"
+          >
+            Spots Gallery
+          </a>
+        </section>
+
+        
+      </main>
+    </div>
   </body>
 </html>

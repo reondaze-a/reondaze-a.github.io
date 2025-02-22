@@ -1,22 +1,33 @@
-body {
+body, h1, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #0a192f;
   color: #ccd6f6;
+  width: 100vw;
+  height: 100vh;
 }
 
-header {
-  text-align: center;
-  padding: 50px 20px;
-}
-
-nav {
+.header {
+  padding: 20px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
-  background-color: #112240;
+  max-width: 100%;
+  background-color: #162c58;
+  margin-bottom: 15px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 20px;
 }
 
 .logo {
@@ -25,26 +36,25 @@ nav {
   color: #64ffda;
 }
 
-nav ul {
+.nav__links {
   list-style: none;
   display: flex;
   gap: 20px;
+  
 }
 
-nav ul li {
+.nav__link {
   display: inline;
-}
-
-nav ul li a {
-  text-decoration: none;
   color: #ccd6f6;
   font-weight: 400;
-  transition: color 0.3s ease-in-out;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
 }
 
-nav ul li a:hover {
+.nav__link:hover {
   color: #64ffda;
 }
+
 
 .projects {
   display: flex;
@@ -53,12 +63,12 @@ nav ul li a:hover {
   gap: 10px;
 }
 
-.projects h1 {
+.projects__title {
   font-size: 36px;
   font-weight: 700;
 }
 
-.projects p {
+.projects__subtitle {
   font-size: 18px;
   font-weight: 300;
   margin-top: 10px;
@@ -72,4 +82,9 @@ nav ul li a:hover {
 
 .projects__link:hover {
     color: #64ffda;
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
 }
