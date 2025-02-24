@@ -1,72 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <div class="page">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="vendor/normalize.css" />
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body class="body">
+        <div class="page">
+            <!--Box of the content-->
+            <div class="page__box">
+                <!--Header-->
+                <header class="header">
+                    <div class="header__logo">Portfolio</div>
+                    <nav class="nav">
+                        <ul class="nav__links">
+                            <li class="nav__item">
+                                <a class="nav__link" href="#home">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#about">About</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#projects"
+                                    >Projects</a
+                                >
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+                <!--Header end-->
 
-      <!--Header-->
-      <header class="header">
-        <div class="logo">My Portfolio</div>
-        <nav class="nav">
-          <ul class="nav__links">
-            <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
-            <li class="nav__item"><a class="nav__link" href="#projects">Projects</a></li>
-            <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-        
-      </header>
-      <!--Header end-->
-
-      <main class="projects">
-        <h1 class="projects__title">Welcome to My Portfolio</h1>
-        <p class="projects__subtitle">Below are the projects that I've worked with as well as currently working on:</p>
-        
-        <section class="projects__grid">
-          <a 
-              class="projects__link" 
-              href="https://reondaze-a.github.io/se_project_coffeeshop"
-              target="_blank"
-          >
-            Triple Peaks Cafe
-          </a>
-          <a 
-              class="projects__link" 
-              href="https://reondaze-a.github.io/se_project_spots"
-              target="_blank"
-          >
-            Spots Gallery
-          </a>
-          <a 
-              class="projects__link" 
-              href="https://github.com/reondaze-a/tripleten-projects/tree/main/project-8"
-              target="_blank"
-          >
-            Supervised Learning: Beta Bank
-          </a>
-          <a 
-              class="projects__link" 
-              href="https://github.com/reondaze-a/tripleten-projects/tree/main/project-6"
-              target="_blank"
-          >
-            Data Collection and Storage (SQL): Zuber
-          </a>
-          <a 
-              class="projects__link" 
-              href="https://github.com/reondaze-a/tripleten-projects/tree/main/project-4"
-              target="_blank"
-          >
-            Streamlit Webpage Project
-          </a>
-        </section>
-
-        
-      </main>
-    </div>
-  </body>
+                <!--Content Start-->
+                <main class="content">
+                    <div class="content__textbox">
+                        <h1 class="content__title">
+                            Hello,
+                            <span class="line-break myname"
+                                >I'm Abraham Efraim</span
+                            >
+                            <span class="line-break"
+                                >And I'm a Frontend Developer</span
+                            >
+                        </h1>
+                        <p class="content__subtitle">
+                            Below are the projects that I've worked with as well
+                            as currently working on:
+                        </p>
+                    </div>
+                    <div class="content__image-box">
+                        <img
+                            src="images/profile-photo.jpeg"
+                            alt="profile photo"
+                            class="content__image"
+                        />
+                    </div>
+                    <!--Projects-->
+                    <!-- <section class="projects">
+                        <a
+                            class="projects__link"
+                            href="https://reondaze-a.github.io/se_project_coffeeshop"
+                            target="_blank"
+                        >
+                            Triple Peaks Cafe
+                        </a>
+                        <a
+                            class="projects__link"
+                            href="https://reondaze-a.github.io/se_project_spots"
+                            target="_blank"
+                        >
+                            Spots Gallery
+                        </a>
+                        <a
+                            class="projects__link"
+                            href="https://github.com/reondaze-a/tripleten-projects/tree/main/project-8"
+                            target="_blank"
+                        >
+                            Supervised Learning: Beta Bank
+                        </a>
+                        <a
+                            class="projects__link"
+                            href="https://github.com/reondaze-a/tripleten-projects/tree/main/project-6"
+                            target="_blank"
+                        >
+                            Data Collection and Storage (SQL): Zuber
+                        </a>
+                        <a
+                            class="projects__link"
+                            href="https://github.com/reondaze-a/tripleten-projects/tree/main/project-4"
+                            target="_blank"
+                        >
+                            Streamlit Webpage Project
+                        </a>
+                    </section> -->
+                    <!--Projects End-->
+                </main>
+                <!--Content End-->
+            </div>
+        </div>
+    </body>
 </html>

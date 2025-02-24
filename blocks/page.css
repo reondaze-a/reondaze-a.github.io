@@ -1,0 +1,22 @@
+.page {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #071730;
+    background: linear-gradient(180deg, #071730, #08c4bb);
+    color: #ccd6f6;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page__box {
+    width: 90%;
+    height: 80vh;
+    background-color: #071730;
+    border: #630e59 1px solid;
+    box-shadow: 0 0 100px 10px #544d4d;
+    border-radius: 16px;
+}

@@ -1,0 +1,15 @@
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.projects__link {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+.projects__link:hover {
+    color: #64ffda;
+}

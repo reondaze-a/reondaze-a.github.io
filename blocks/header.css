@@ -1,0 +1,15 @@
+.header {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    background-color: #162c58;
+    height: 10%;
+}
+
+.header__logo {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #dee1e9;
+}

@@ -1,0 +1,18 @@
+@import url(blocks/page.css);
+@import url(blocks/header.css);
+@import url(blocks/nav.css);
+@import url(blocks/content.css);
+@import url(blocks/projects.css);
+
+body,
+h1,
+h2,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+}
