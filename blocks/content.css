@@ -4,6 +4,7 @@
     padding: 20px 50px;
     height: 80%;
     align-items: center;
+    justify-content: space-around;
 }
 
 .content__textbox {
@@ -29,9 +30,15 @@
     font-weight: 700;
 }
 
+.job-title {
+    color: #00fff2;
+    font-weight: 700;
+}
+
 .content__subtitle {
     font-size: 18px;
     font-weight: 300;
+    max-width: 80%;
 }
 
 .content__image-box {
