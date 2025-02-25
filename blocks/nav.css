@@ -12,6 +12,7 @@
 }
 
 .nav__link {
+    font-family: "Poppins", sans-serif;
     display: inline;
     color: #ccd6f6;
     font-weight: 400;

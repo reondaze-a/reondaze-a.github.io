@@ -1,4 +1,15 @@
+@keyframes up-and-down {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
 .content {
+    font-family: "Poppins", sans-serif;
     display: flex;
     gap: 20px;
     padding: 20px 50px;
@@ -10,7 +21,7 @@
 .content__textbox {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 40px;
 }
 
 .line-break {
@@ -18,6 +29,7 @@
 }
 
 .content__title {
+    font-family: "Poppins", "sans-serif";
     font-size: 40px;
     font-weight: 300;
     display: flex;
@@ -53,4 +65,5 @@
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     box-shadow: 0 2px 15px #0651ca;
+    animation: up-and-down 3s ease-in-out infinite;
 }
