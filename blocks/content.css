@@ -30,7 +30,7 @@
 
 .content__title {
     font-family: "Poppins", "sans-serif";
-    font-size: 40px;
+    font-size: 3vw;
     font-weight: 300;
     display: flex;
     flex-direction: column;
@@ -38,7 +38,7 @@
 }
 
 .myname {
-    font-size: 55px;
+    font-size: 4vw;
     font-weight: 700;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .content__subtitle {
-    font-size: 18px;
+    font-size: 1.5vw;
     font-weight: 300;
     max-width: 80%;
 }
@@ -61,7 +61,7 @@
 
 .content__image {
     object-fit: cover;
-    max-width: 70%;
+    max-width: 80%;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     box-shadow: 0 2px 15px #0651ca;
