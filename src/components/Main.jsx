@@ -6,7 +6,7 @@ export default function Main() {
   return (
     <main className="flex w-full flex-col">
       <Profile />
-      <Separator />  
+      <Separator />
       <Projects />
     </main>
   );
