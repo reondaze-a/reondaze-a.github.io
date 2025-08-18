@@ -2,9 +2,9 @@
 
 This repository contains the source code for my personal portfolio website, built to showcase my projects, skills, and experience as a developer.
 
-## 🔗 Live Demo: Visit Portfolio
+🔗 Live Demo: Visit [Website](https://reondaze-a.github.io/)
 
-### 📋 Features
+## 📋 Features
 
 - Responsive design (mobile, tablet, desktop friendly)
 - Project showcase with descriptions and links
@@ -12,7 +12,7 @@ This repository contains the source code for my personal portfolio website, buil
 - Contact section with links to email and GitHub
 - Built with modern tools and frameworks
 
-### 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 - HTML5 / CSS3 / JavaScript (ES6+)
 - React with Vite
