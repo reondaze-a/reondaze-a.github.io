@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite --open",
     "build": "vite build",
+    "deploy": "vite build && gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview",
     "tailwind:init": "tailwindcss init -p"

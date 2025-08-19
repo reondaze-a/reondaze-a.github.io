@@ -7,7 +7,7 @@ export default function ProjectCard({ title, description, technologies, image, d
                     <img 
                         src={image} 
                         alt={title}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                        className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
                     />
                 ) : (
                     <div className="w-full h-full flex items-center justify-center">
@@ -27,12 +27,14 @@ export default function ProjectCard({ title, description, technologies, image, d
                     <div className="flex space-x-4">
                         <a 
                             href={demoUrl} 
+                            target="_blank"
                             className="bg-white text-gray-900 px-4 py-2 rounded-full font-medium hover:bg-gray-100 transition-colors duration-200"
                         >
                             Live Demo
                         </a>
                         <a 
-                            href={githubUrl} 
+                            href={githubUrl}
+                            target="_blank" 
                             className="bg-gray-900 text-white px-4 py-2 rounded-full font-medium hover:bg-gray-800 transition-colors duration-200"
                         >
                             GitHub

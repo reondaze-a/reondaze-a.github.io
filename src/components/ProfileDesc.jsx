@@ -4,8 +4,8 @@ export default function ProfileDesc() {
       <div className="space-y-6">
         <div className="space-y-2">
           <p className="text-blue-600 font-semibold text-lg tracking-wide">Hello, I'm</p>
-          <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-            Abraham Efraim
+          <h1 className="text-5xl lg:text-5xl font-bold text-gray-900 leading-tight">
+            Abraham Efraim, a
             <span className="block text-4xl lg:text-5xl bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Fullstack Developer
             </span>

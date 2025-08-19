@@ -1,23 +1,25 @@
 import ProjectCard from "./ProjectCard";
+import spots_header from "../assets/spots-project.png";
+import wtwr_header from "../assets/what-to-wear.png";
 
 export default function ProjectsGrid() {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ProjectCard 
-                title="E-Commerce Platform"
-                description="A modern e-commerce platform built with React and Node.js"
-                technologies={["React", "Node.js", "MongoDB", "Stripe"]}
-                image="/api/placeholder/400/250"
-                demoUrl="#"
-                githubUrl="#"
+                title="Spots Gallery"
+                description="A picture gallery web app for sharing and discovering beautiful spots"
+                technologies={["React", "Node.js"]}
+                image={spots_header}
+                demoUrl="https://reondaze-a.github.io/spots_project/"
+                githubUrl="https://github.com/reondaze-a/spots_project"
             />
             <ProjectCard 
-                title="Task Management App"
-                description="A collaborative task management application with real-time updates"
-                technologies={["React", "Firebase", "Tailwind CSS"]}
-                image="/api/placeholder/400/250"
-                demoUrl="#"
-                githubUrl="#"
+                title="What-to-Wear"
+                description="A weather-based clothing recommendation app"
+                technologies={["React", "Node.js", "MongoDB", "OpenWeather API"]}
+                image={wtwr_header}
+                demoUrl="https://reondaze-a.github.io/se_project_react/#/"
+                githubUrl="https://github.com/reondaze-a/se_project_react"
             />
             <ProjectCard 
                 title="Weather Dashboard"
