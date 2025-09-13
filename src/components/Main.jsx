@@ -1,6 +1,6 @@
-import Profile from "./Profile";
+import Profile from "./Profile/Profile";
 import Separator from "./Separator";
-import Projects from "./Projects";
+import Projects from "./Projects/Projects";
 
 export default function Main() {
   return (

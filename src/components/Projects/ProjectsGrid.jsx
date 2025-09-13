@@ -1,6 +1,6 @@
 import ProjectCard from "./ProjectCard";
-import spots_header from "../assets/spots-project.png";
-import wtwr_header from "../assets/what-to-wear.png";
+import spots_header from "../../assets/spots-project.png";
+import wtwr_header from "../../assets/what-to-wear.png";
 
 export default function ProjectsGrid() {
     return (
@@ -8,15 +8,15 @@ export default function ProjectsGrid() {
             <ProjectCard 
                 title="Spots Gallery"
                 description="A picture gallery web app for sharing and discovering beautiful spots"
-                technologies={["React", "Node.js"]}
+                technologies={["HTML", "CSS", "JavaScript"]}
                 image={spots_header}
                 demoUrl="https://reondaze-a.github.io/spots_project/"
                 githubUrl="https://github.com/reondaze-a/spots_project"
             />
             <ProjectCard 
                 title="What-to-Wear"
-                description="A weather-based clothing recommendation app"
-                technologies={["React", "Node.js", "MongoDB", "OpenWeather API"]}
+                description="A MERN-Stack weather-based clothing recommendation app"
+                technologies={["React", "Express.js", "MongoDB", "Node.js", "OpenWeather API"]}
                 image={wtwr_header}
                 demoUrl="https://reondaze-a.github.io/se_project_react/#/"
                 githubUrl="https://github.com/reondaze-a/se_project_react"
