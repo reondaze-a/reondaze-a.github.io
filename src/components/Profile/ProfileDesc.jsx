@@ -17,12 +17,13 @@ export default function ProfileDesc() {
           Passionate about clean code, user experience, and bringing ideas to life through code.
         </p>
         
+        {/* Tech Stack */}
         <div className="flex flex-wrap gap-3 pt-4">
-          <span className="px-4 py-2 bg-red-100 text-blue-800 rounded-full text-sm font-medium">React</span>
-          <span className="px-4 py-2 bg-orange-100 text-purple-800 rounded-full text-sm font-medium">Next.js</span>
-          <span className="px-4 py-2 bg-yellow-100 text-green-800 rounded-full text-sm font-medium">Tailwind</span>
-          <span className="px-4 py-2 bg-green-100 text-yellow-800 rounded-full text-sm font-medium">Node.js</span>
-          <span className="px-4 py-2 bg-blue-200 text-yellow-800 rounded-full text-sm font-medium">MongoDB</span>
+          <span className="px-4 py-2 bg-red-100 text-red-800 rounded-full text-sm font-medium">React</span>
+          <span className="px-4 py-2 bg-orange-100 text-orange-800 rounded-full text-sm font-medium">Next.js</span>
+          <span className="px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">Tailwind</span>
+          <span className="px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium">Node.js</span>
+          <span className="px-4 py-2 bg-blue-200 text-blue-800 rounded-full text-sm font-medium">MongoDB</span>
         </div>
       </div>
       
