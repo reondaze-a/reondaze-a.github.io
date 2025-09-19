@@ -1,6 +1,7 @@
 import ProjectCard from "./ProjectCard";
 import spots_header from "../../assets/spots-project.png";
 import wtwr_header from "../../assets/what-to-wear.png";
+import church_header from "../../assets/church-demo.png";
 
 export default function ProjectsGrid() {
     return (
@@ -22,12 +23,12 @@ export default function ProjectsGrid() {
                 githubUrl="https://github.com/reondaze-a/se_project_react"
             />
             <ProjectCard 
-                title="Weather Dashboard"
-                description="A beautiful weather dashboard with location-based forecasts"
-                technologies={["JavaScript", "API Integration", "CSS3"]}
-                image="/api/placeholder/400/250"
-                demoUrl="#"
-                githubUrl="#"
+                title="Fresh Life Church"
+                description="A modern church community web app designed to connect members, share sermons, and organize events."
+                technologies={["Next.js", "Tailwind", "Vercel", "MongoDB"]}
+                image={church_header}
+                demoUrl="https://mock-repo-k1nk.vercel.app/"
+                githubUrl="https://github.com/reondaze-a/mock-repo"
             />
         </div>
     );
