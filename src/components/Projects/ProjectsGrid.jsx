@@ -27,8 +27,8 @@ export default function ProjectsGrid() {
                 description="A modern church community web app designed to connect members, share sermons, and organize events."
                 technologies={["Next.js", "Tailwind", "Vercel", "MongoDB"]}
                 image={church_header}
-                demoUrl="https://mock-repo-k1nk.vercel.app/"
-                githubUrl="https://github.com/reondaze-a/mock-repo"
+                demoUrl="https://fresh-life-repo.vercel.app/"
+                githubUrl="https://github.com/reondaze-a/fresh-life-repo"
             />
         </div>
     );
