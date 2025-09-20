@@ -14,7 +14,6 @@ This repository contains the source code for my personal portfolio website, buil
 
 ## 🛠️ Tech Stack
 
-- HTML5 / CSS3 / JavaScript (ES6+)
-- React with Vite
+- React.js with Vite
 - Tailwind CSS (styling)
 - GitHub Pages for hosting
