@@ -1,6 +1,9 @@
 import { useState } from "react";
+import { useModal } from "../contexts/ModalContext";
 
-export default function Navbar({ setActiveModal }) {
+export default function Navbar() {
+  const { setActiveModal } = useModal();
+
   const [open, setOpen] = useState(false);
 
   return (

@@ -3,7 +3,11 @@ import FormField from "../Forms/FormField";
 import FormWrapper from "../Forms/FormWrapper";
 import { useState } from "react";
 
-export default function ContactModal({ activeModal, setActiveModal }) {
+import { useModal } from "../../contexts/ModalContext";
+
+export default function ContactModal() {
+  const { activeModal, setActiveModal } = useModal();
+
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -18,6 +22,7 @@ export default function ContactModal({ activeModal, setActiveModal }) {
     e.preventDefault();
     console.log("Form submitted:", form);
     setActiveModal(null);
+    setForm({ name: "", email: "", message: "" });
   }
 
   return (
