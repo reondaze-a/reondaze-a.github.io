@@ -12,7 +12,7 @@ export default function Modal({
       onClick={onClose}
     >
       <div
-        className="max-w-md w-full bg-white min-h-1/3 rounded-lg shadow-lg flex flex-col items-center p-5 mx-5 animate-appear"
+        className="max-w-md w-full bg-white rounded-lg shadow-lg flex flex-col items-center p-5 mx-5 animate-appear"
         onClick={(e) => e.stopPropagation()}
       >
         <h2 className="text-2xl font-bold">{title}</h2>

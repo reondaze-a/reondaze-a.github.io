@@ -4,25 +4,38 @@ import FormWrapper from "../Forms/FormWrapper";
 import { useState } from "react";
 
 import { useModal } from "../../contexts/ModalContext";
+import { useFormAndValidation } from "../../hooks/useFormAndValidation";
 
 export default function ContactModal() {
   const { activeModal, setActiveModal } = useModal();
+  const { values, handleChange, errors, isValid, resetForm, useErrorTimeOut } =
+    useFormAndValidation();
 
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  // localized loading
+  const [loading, setLoading] = useState(false);
 
-  function handleChange(e) {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  }
+  // general error message
+  const [error, setError] = useState("");
+  useErrorTimeOut(error, setError);
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
-    console.log("Form submitted:", form);
-    setActiveModal(null);
-    setForm({ name: "", email: "", message: "" });
+    setLoading(true);
+
+    const payload = {
+      name: values.name?.trim(),
+      email: values.email?.trim(),
+      message: values.message?.trim(),
+    };
+
+    try {
+      await fetch(payload);
+      resetForm();
+    } catch (err) {
+      setError(err?.message || "Registration failed. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
@@ -31,26 +44,34 @@ export default function ContactModal() {
       onClose={() => setActiveModal(null)}
       title="Contact me"
     >
-      <FormWrapper onSubmit={handleSubmit}>
+      <FormWrapper
+        onSubmit={handleSubmit}
+        disabled={!isValid || loading}
+        error={error}
+        submitLabel={loading ? "Submitting..." : "Submit"}
+      >
         <FormField
           label="Name"
           name="name"
           required={true}
-          value={form.name}
+          value={values.name || ""}
+          error={errors.name}
           onChange={handleChange}
         />
         <FormField
           label="Email (optional)"
           name="email"
           type="email"
-          value={form.email}
+          value={values.email || ""}
           onChange={handleChange}
         />
         <FormField
           label="Message"
           name="message"
+          required={true}
           type="textarea"
-          value={form.message}
+          value={values.message || ""}
+          error={errors.message}
           onChange={handleChange}
         />
       </FormWrapper>
