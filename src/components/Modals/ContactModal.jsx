@@ -29,8 +29,9 @@ export default function ContactModal() {
     };
 
     try {
-      await fetch(payload);
+      await fetch("");
       resetForm();
+      setActiveModal(null);
     } catch (err) {
       setError(err?.message || "Registration failed. Please try again.");
     } finally {
@@ -53,22 +54,24 @@ export default function ContactModal() {
         <FormField
           label="Name"
           name="name"
-          required={true}
+          required
           value={values.name || ""}
           error={errors.name}
           onChange={handleChange}
         />
         <FormField
-          label="Email (optional)"
+          label="Email"
           name="email"
+          required
           type="email"
           value={values.email || ""}
+          error={errors.email}
           onChange={handleChange}
         />
         <FormField
           label="Message"
           name="message"
-          required={true}
+          required
           type="textarea"
           value={values.message || ""}
           error={errors.message}
