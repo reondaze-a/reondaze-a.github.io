@@ -3,6 +3,7 @@ import spots_header from "../../assets/spots-project.png";
 import wtwr_header from "../../assets/what-to-wear.png";
 import church_header from "../../assets/church-demo.png";
 import protein_header from "../../assets/protein-per-dollar.png";
+import splitcodejam_header from "../../assets/splits-app.png";
 
 export default function ProjectsGrid() {
     return (
@@ -38,6 +39,14 @@ export default function ProjectsGrid() {
                 image={protein_header}
                 demoUrl="https://reondaze-a.github.io/final_project/#/"
                 githubUrl="https://github.com/reondaze-a/final_project"
+            />
+            <ProjectCard 
+                title="Split Code Jam"
+                description="A collaborative code jam application for splitting and tracking expenses on a trip."
+                technologies={["JavaScript", "CSS", "HTML"]}
+                image={splitcodejam_header}
+                demoUrl="https://splitcodejam.netlify.app/"
+                githubUrl="https://github.com/mofesdo/Split?tab=readme-ov-file"
             />
         </div>
     );
