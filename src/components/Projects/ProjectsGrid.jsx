@@ -4,6 +4,7 @@ import wtwr_header from "../../assets/what-to-wear.png";
 import church_header from "../../assets/church-demo.png";
 import protein_header from "../../assets/protein-per-dollar.png";
 import splitcodejam_header from "../../assets/splits-app.png";
+import vura_header from "../../assets/vura-demo.png";
 
 export default function ProjectsGrid() {
     return (
@@ -47,6 +48,14 @@ export default function ProjectsGrid() {
                 image={splitcodejam_header}
                 demoUrl="https://splitcodejam.netlify.app/"
                 githubUrl="https://github.com/mofesdo/Split?tab=readme-ov-file"
+            />
+            <ProjectCard 
+                title="Vura by Betterhunt"
+                description="A full-stack community platform for sandwich generations that integrates AI-powered features to manage user profiles, group chats, care plans, and intelligent onboarding within a modular, production-structured architecture."
+                technologies={["React.js", "Keystone.js", "GraphQL", "Tailwind", "Typescript"]}
+                image={vura_header}
+                demoUrl="https://d146pooersq68i.cloudfront.net/"
+                githubUrl="https://github.com/tripleten-externships/vura-monorepo"
             />
         </div>
     );
