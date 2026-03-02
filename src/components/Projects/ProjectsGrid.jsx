@@ -22,7 +22,7 @@ export default function ProjectsGrid() {
                 description="A MERN-Stack weather-based clothing recommendation app"
                 technologies={["MongoDB", "Express.js", "React.js", "Node.js", "OpenWeather API", "GCP"]}
                 image={wtwr_header}
-                demoUrl="https://whattowear.strangled.net/"
+                demoUrl="https://reondaze-a.github.io/se_project_react/#/"
                 githubUrl="https://github.com/reondaze-a/se_project_react"
             />
             <ProjectCard 
